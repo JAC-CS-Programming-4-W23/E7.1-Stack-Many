@@ -1,12 +1,12 @@
-# Exercise 4.2 - 🚏 Queue Array
+# Exercise 7.1 - 🚏 Stack Many
 
 ## 🎯 Objectives
 
-- **Implement** extend the features of the basic Stack with the ability 
+- **Implement** extend the features of the basic Stack with the ability to push and pop multiple elements at a time.
 
 ## 🔨 Setup
 
-1. Clone the repo (or download the zip) for this exercise, which you can find [here](https://github.com/JAC-CS-Programming-4-W23/E4.2-Queue-Array).
+1. Clone the repo (or download the zip) for this exercise, which you can find [here](https://github.com/JAC-CS-Programming-4-W23/E7.1-Stack-Many).
 2. Start IntelliJ, go to `File -> Open...`, and select the cloned/downloaded folder.
 3. If at the top it says "Project JDK is not defined", click "Setup JDK" on the top right, and select the JDK version you have installed on your machine.
 
@@ -51,14 +51,14 @@ Create a class called `StackMany` that supports the original stack operations wi
 Let's set this up:
 
 1. Create a class called `StackMany`.
-3. Create two constructors: one where the queue `capacity` is provided and one where it is not, relying on a default `QUEUE_CAPACITY`.
-4. Implement the methods of the `Queue` API: `enqueue(..)`, `dequeue()`, `front()`, `isEmpty()` and `isFull()`.
-5. Throw exception `QueueOverflowException` and `QueueUnderflowException` when the caller has not met the operation preconditions.
-6. Pass the unit tests in the class `TestQueue`.
+3. Create two constructors: one where the queue `capacity` is provided and one where it is not, relying on a default `STACK_CAPACITY`.
+4. Implement the methods of the `StackMany` API: `pushMany(..)` and `popMany()`.
+5. Throw exception `StackOverflowException` and `StackUnderflowException` when the caller has not met the operation preconditions.
+6. Pass the unit tests in the class `TestStackMany`.
 
 ## 🔬 Observations
 
-- From the Which type of methods are `pushMany` and `popMany`
+- The methods `pushMany` and `popMany` are only in a `StackMany` not in the super class `Stack`.
 
 
 
